@@ -15,7 +15,7 @@ function connect () {
     host: cfg.host,
     port: cfg.port,
     username: cfg.username,
-    offline: cfg.offline
+    auth: 'microsoft'
   })
 
   client.on('spawn', async () => {
